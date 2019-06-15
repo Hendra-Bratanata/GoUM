@@ -11,27 +11,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4">
+
         <EditText
             android:id="@+id/edtCariProduk"
-            android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:hint="cari produk disinin"/>
+            android:layout_weight="3"
+            android:hint="cari produk disini" />
+
         <ImageButton
             android:id="@+id/btnCariProduk"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_search_white_24dp"/>
+            android:layout_weight="1"
+            android:src="@drawable/ic_search_white_24dp" />
     </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvCariProduk"
-        tools:listitem="@layout/item_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:listitem="@layout/item_grid"
         tools:orientation="vertical"
         tools:scrollbars="vertical"
-        tools:spanCount="2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        tools:spanCount="2" />
 
 </LinearLayout>
